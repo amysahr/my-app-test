@@ -1,38 +1,106 @@
-.App {
+/* Global resets */
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+/* Fonts */
+h1 {
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 630px;
+}
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+/* Tooltip */
+
+.tooltip {
+  color: #fff;
+  background-color: #424242;
+  padding: 10px 0;
+  border-radius: 4px;
+  width: 250px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Progress bar */
+
+.progressBar_container {
+  position: relative;
+  height: 12px;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.progressBar_bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #20a1d4;
+  width: 75%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Box frame */
+
+.boxFrame {
+  width: 250px;
+  border: 1px solid #eaeaea;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.boxFrame_content {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Notification */
+
+.notification {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.notification a {
+  color: #000;
+  padding-left: 5px;
+}
+
+.notification-success {
+  border-color: #1cbc2c;
+  background-color: #dff0d8;
+}
+
+/* Other */
+
+input[type="text"] {
+  padding: 11px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+}
+
+button,
+input[type="submit"] {
+  padding: 12px;
+  background-color: #1cbc2c;
+  border: 0px;
+  color: #fff;
+  border-radius: 5px;
 }
